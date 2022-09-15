@@ -353,10 +353,10 @@ while True:
         elif reply.upper() == CONTRASEÑA_SECRETA:  # SI SE USÓ LA PALBRA SECRETA...
             if contraseña_usada == 0:
                 plusPuntaje = random.randint(35, 78)
-                score += plusPuntaje
+                puntaje += plusPuntaje
                 print(
                     setColour(
-                        f"\n¡Increíble {name}!, veo que conoces la llave secreta del conocimiento, por ello se te han otorgado {plusPuntaje} puntotes, para un total de {score} puntos acumulados. Recuerda no abusar de esto, o podrías tener consecuencias negativas o.o!\n",
+                        f"\n¡Increíble {name}!, veo que conoces la llave secreta del conocimiento, por ello se te han otorgado {plusPuntaje} puntotes, para un total de {puntaje} puntos acumulados. Recuerda no abusar de esto, o podrías tener consecuencias negativas o.o!\n",
                         "y"))
                 contraseña_usada += 1
                 total_de_preguntas_secretas += 1
@@ -373,7 +373,7 @@ while True:
 
             elif contraseña_usada == 1:
                 plusPuntaje = random.randint(50, 106)
-                score += plusPuntaje
+                puntaje += plusPuntaje
                 print(
                     setColour(
                         f"\n¡Sorprendente {name}!, sigues demostrando ser portador del conocimiento absoluto, por ello los dioses te bendicen con {plusPuntaje} puntotes, para un total de {puntaje} puntos acumulados. Sin embargo, te aconsejo no emplearlo más, o podrías desatar un castigo scorístico sobre ti u-ú. \n",
