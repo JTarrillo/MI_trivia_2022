@@ -392,10 +392,10 @@ while True:
                     limpiar()
             else:
                 plusPuntaje = random.randint(-96, -12)
-                score += plusPuntaje
+                puntaje += plusPuntaje
                 print(
                     setColour(
-                        f"\nOh no, lamentablemente has abusado mucho de este poder, y se te ha penalizado con {plusPuntaje} puntos menos :(, quedándote solo {score} puntos. Te advertí de ello {name}. Te aconsejo no usarlo más y seguir solo con tus conocimientos.\n",
+                        f"\nOh no, lamentablemente has abusado mucho de este poder, y se te ha penalizado con {plusPuntaje} puntos menos :(, quedándote solo {puntaje} puntos. Te advertí de ello {name}. Te aconsejo no usarlo más y seguir solo con tus conocimientos.\n",
                         "r"))
                 contraseña_usada += 1
                 total_de_preguntas_secretas += 1
@@ -548,7 +548,7 @@ while True:
                 break
         elif ganaroPerder.upper() == "N":
             print(
-                f"\nEntendemos que hoy te sientes sin suerte {name}, tu puntaje final esta ronda fue de {score} puntos."
+                f"\nEntendemos que hoy te sientes sin suerte {name}, tu puntaje final esta ronda fue de {puntaje} puntos."
             )
             break
 
@@ -584,7 +584,7 @@ puntajeAcumulado = sum(puntaciones_acumuladas)
 if contraseña_usada == 0:
 
     print(
-        f"Muchas gracias por jugar {name}, has completado un total de {rondas} rondas con un score máximo de {maximo_puntaje} puntos. Además, el puntaje acumulado de todas las rondas es de {puntajeAcumulado} puntos\n"
+        f"Muchas gracias por jugar {name}, has completado un total de {rondas} rondas con un puntaje máximo de {maximo_puntaje} puntos. Además, el puntaje acumulado de todas las rondas es de {puntajeAcumulado} puntos\n"
     )
 
     imprimirTitulos("bl", "Esperamos verte pronto por aquí :)")
