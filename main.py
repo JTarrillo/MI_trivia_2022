@@ -19,7 +19,7 @@ def entrada_numerica(name, tiempo_de_espera=3):
     # Pregunta: define la cadena para solicitud de datos al usuario
     # Type: define el tipo de numero que debe aceptarse (1: Solo Enteros; 2: Decimales (y enteros, pero siempre retorna un decimal))
     # Incorrecto: define la cadena para mostrar al usuario al ingresar un parámetro invalido
-    # Tarrineitor
+    # Tarrineitor .:)
     pregunta = f"Vamos {name}, ingresa tu número (1-6): "
     pregunta2 = f"Vamos {name}, el número ingresado debe estar en el rango 1 a 6, sino es inválido, prueba otra vez: "
     incorrecto = "El valor ingresado no es un número correcto, espera unos segundos para intentarlo de nuevo."
